@@ -21,3 +21,5 @@ function Vkh(a,b,c) {
     return a * b * c
 }/*thể tích khối hộp*/
 console.log(Vkh(2,3,7));
+
+
