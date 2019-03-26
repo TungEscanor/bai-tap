@@ -76,4 +76,4 @@ function calculate(start, end) {
     }
 console.log(calculate(2,5));
 
-console.log('bài 6: Em chưa học lập trình bao giờ lên chẳng hiểu đề bài là gì nữa');
+console.log('bài 6: Em chưa học lập trình bao giờ lên chẳng hiểu đề bài là gì nữa, sẽ sớm hoàn thiện khi hiểu bài');
