@@ -68,19 +68,19 @@ console.log('Bài 5: Viết function trả về tích các số từ start đế
  * Ví dụ: console.log(calculate(2, 5)) sẽ hiển thị ra màn hình 24 (vì 2 * 3 * 4 = 24)
  */
 function calculate(start, end) {
-        mul = 1;
+        j = 1;
         for ( i = start; i < end ; i ++) {
-            mul*=i
+            j*=i
         };
-        return mul;
+        return j;
     }
 console.log(calculate(2,5));
 
-console.log('bài 6sử dụng vòng lặp for...of viết hàm has để kiểm tra xem array có tồn tại 1 giá trị xác định hay không ');
+console.log('bài 6:sử dụng vòng lặp for...of viết hàm has để kiểm tra xem array có tồn tại 1 giá trị xác định hay không ');
 
 
 function has(array, value) {
-    for ( i = 0; i <= 3 ; i++) {
+    for ( i = 0; i<= 3; i++) {
         if (array[i] === value){
             return true;
         }

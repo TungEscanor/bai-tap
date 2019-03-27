@@ -5,7 +5,7 @@
     bark : function () {//anonymus funtion
         console.log('meo meo, my name is', this.name);
     },
-eat: function(bone) {
+    eat: function(bone) {
     this.weight = this.weight + bone.weight;
     return this;
     }
