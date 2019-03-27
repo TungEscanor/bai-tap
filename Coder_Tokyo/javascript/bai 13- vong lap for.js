@@ -76,4 +76,18 @@ function calculate(start, end) {
     }
 console.log(calculate(2,5));
 
-console.log('bài 6: Em chưa học lập trình bao giờ lên chẳng hiểu đề bài là gì nữa, sẽ sớm hoàn thiện khi hiểu bài');
+console.log('bài 6sử dụng vòng lặp for...of viết hàm has để kiểm tra xem array có tồn tại 1 giá trị xác định hay không ');
+
+
+function has(array, value) {
+    for ( i = 0; i <= 3 ; i++) {
+        if (array[i] === value){
+            return true;
+        }
+        else {
+            return false;
+        }
+    
+    }
+};
+console.log(has([1,2,3],1));

@@ -1,0 +1,5 @@
+{
+    "jshint.lintHTML": true,
+    "npm.enableScriptExplorer": true,
+    "npm.runSilent": true
+}
