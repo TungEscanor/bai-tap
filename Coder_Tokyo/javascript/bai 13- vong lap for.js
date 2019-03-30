@@ -90,4 +90,4 @@ function has(array, value) {
     
     }
 };
-console.log(has([1,2,3],1));
+console.log(has([1,2,3],9));

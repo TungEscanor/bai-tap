@@ -22,30 +22,30 @@
  * Điểm khác nhau giữa 2 vòng lặp for...of và for...in, viết code ví dụ
  */
 
-//Vòng lặp for...of trả về value của phần tử, vòng lặp for...in trả về index của phần tử
+console.log('Vòng lặp for...of trả về value của phần tử, vòng lặp for...in trả về index của phần tử');
 
-// var math = [ 5, 6, 'trung binh'];
+var math = [ 5, 6, 'trung binh'];
 
-// for ( var information of math) {
-//     console.log(information);
-// };
-// console.log('=======');
-// for (var i in math) {
-//     console.log(i);
-// };
+for ( var information of math) {
+    console.log(information);
+};
+console.log('=======');
+for (var i in math) {
+    console.log(i);
+};
 
 
 /** Bài 2
  * Sử dụng vòng lặp for...of để tính tích của các phần tử trong một array gồm các số
  */
 
-// function multiply(arr) { 
-//     j = 1;
-//     for ( var i of arr ) {
-//             j *= i
-//     };
-//     return  j
-// };
+function multiply(arr) { 
+    j = 1;
+    for ( var i of arr ) {
+            j *= i
+    };
+    return  j
+};
 
 // console.log(multiply([2, 3, 4])); // expect: 24
 
@@ -55,15 +55,15 @@
 //  * Gợi ý: đây là bài tập khó, bạn nên tìm hiểu về recursive trước
 //  */
 
-// var apartment = {
-//     bedroom: {
-//       area: 20,
-//       bed: {
-//         type: 'twin-bed',
-//         price: 100
-//       }
-//     }
-//   };
+var apartment = {
+    bedroom: {
+      area: 20,
+      bed: {
+        type: 'twin-bed',
+        price: 100
+      }
+    }
+  };
   
 //   /**
 //    * Kết quả mong muốn:
@@ -74,38 +74,35 @@
 //    * price
 //    * Chú ý: không cần hiển thị ra đúng thứ tự như trên
 //    */
-//   var apartment = {
-//     bedroom: {
-//       area: 20,
-//       bed: {
-//         type: 'twin-bed',
-//         price: 100
-//       }
-//     }
-//   };
-//   var key1 = Object.keys(apartment);
-//   var key2 = Object.keys(apartment.bedroom);
-//   var key3 = Object.keys(apartment.bedroom.bed);
-//   var key23 = key2.concat(key3);
-//   var keys = key1.concat(key23);
+  var apartment = {
+    bedroom: {
+      area: 20,
+      bed: {
+        type: 'twin-bed',
+        price: 100
+      }
+    }
+  };
+  var key1 = Object.keys(apartment);
+  var key2 = Object.keys(apartment.bedroom);
+  var key3 = Object.keys(apartment.bedroom.bed);
+  var key23 = key2.concat(key3);
+  var keys = key1.concat(key23);
   
-//   let result = '';
-//   for( let item of keys ){
-//     result += item +'\n';
-//   }
-//   console.log(result)
-  
-//   console.log(key23)
-
+  let result = '';
+  for( var item of keys ){
+    result += item +'\n';
+  }
+  console.log(result);
 
 //Bài 4:
-// function sum(numbers) {
-//     var j = 0;
-//     for ( var i of numbers) {
-//     j += i;
-//     }
-// return j
-// }
+function sum(numbers) {
+    var j = 0;
+    for ( var i of numbers) {
+    j += i;
+    }
+return j
+}
 
 // // Giả thiết: numbers là một array các số nguyên
 // // Yêu cầu: 
@@ -113,17 +110,23 @@
 // //  - nếu array trống trả về 0
 
 function has(object, key) {
-    for ( var i in object) {
-    if ( i === key) { return true}
-    else { return false}
+    for (var i in object) {
+    if ( i === key) {
+      return true
     }
-};
+  }
+    if (i !== key) {
+      return false
+    }
+}
 var me = {
-    age : 24,
-    isHandsome: true,
-    gender : 'male'
+  name : 'tung',
+  age : 23,
+  gender: 'male'
 };
-console.log(has(me, age));
+console.log(has(me, 'gender'));
+
+
     
       // viết hàm has để kiểm tra xem object có tồn tại 1 key xác định hay không
       // Tham số:
