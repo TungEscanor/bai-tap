@@ -13,15 +13,15 @@
     console.log(doubleNumbers (me));
     
     // 2) Take an array of numbers and make them strings
-    // function stringItUp(arr){
-    //   var str = arr.map(function(strings){
-    //     return strings.toString()
-    //   })
-    //   return str
-    // }
+    function stringItUp(arr){
+      var str = arr.map(function(strings){
+        return strings.toString()
+      })
+      return str
+    }
     
-    // var answer = stringItUp([2, 5, 100]); // ["2", "5", "100"]
-    // console.log(answer)
+    var answer = stringItUp([2, 5, 100]); // ["2", "5", "100"]
+    console.log(answer)
     
     // // 3) Capitalize each of an array of names
     // function capitalizeNames(arr) {
