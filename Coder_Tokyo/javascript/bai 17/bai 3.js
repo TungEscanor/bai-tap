@@ -1,12 +1,12 @@
 // Make an array of the names in <h1></h1>, and the ages in <h2></h2>
 function readyToPutInTheDOM(arr) {
-    var after = [];
-    for ( var i = 0; i < arr.length; i ++) {
-        after.push('<h1>' + arr[i].name + '</h1>' + '<h2>' + arr[i].age + '</h2>')
-    }
-    console.log(after);
-}
-readyToPutInTheDOM([
+    var name = arr.map(function(value, i) {
+      value = '<h1>' + arr[i].name + '</h1><h2>' + arr[i].age + '</h2>';
+      return value
+    });
+    return name
+};
+console.log(readyToPutInTheDOM([
   {
     name: "Angelina Jolie",
     age: 80
@@ -27,9 +27,12 @@ readyToPutInTheDOM([
     name: "Bob Ziroll",
     age: 100
   }
-]) 
+]));
 // ["<h1>Angelina Jolie</h1><h2>80</h2>", 
 // "<h1>Eric Jones</h1><h2>2</h2>", 
 // "<h1>Paris Hilton</h1><h2>5</h2>", 
 // "<h1>Kayne West</h1><h2>16</h2>", 
 // "<h1>Bob Ziroll</h1><h2>100</h2>"]
+
+
+

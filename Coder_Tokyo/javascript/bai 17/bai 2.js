@@ -1,13 +1,13 @@
 // Make an array of strings of the names
-function namesOnly(arr) {
-    var after = [];
-        for( var i = 0; i < arr.length; i ++) {
-                after.push(arr[i].name)
-        }
-        console.log(after);
+function namesOnly(item) {
+    var name = item.map(function(value, i){
+        value = item[i].name
+        return value;
+    })
+return name
 }
 
-namesOnly([
+console.log(namesOnly([
   {
     name: "Angelina Jolie",
     age: 80
@@ -28,5 +28,5 @@ namesOnly([
     name: "Bob Ziroll",
     age: 100
   }
-])
+]))
 // ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
