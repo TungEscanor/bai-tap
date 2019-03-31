@@ -11,9 +11,9 @@ function transform(numbers, callback) {
         result.push(callback(numbers[i]));
     }
     console.log(result);
-}
+};
 
-    function double(num) {
+function double(num) {
       return num * 2;
     }
     
