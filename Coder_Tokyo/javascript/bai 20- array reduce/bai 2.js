@@ -10,4 +10,4 @@ var wishlist = [
   { title: "Gold fidgit spinner", price: 2000 },
   { title: "A second Tesla Model S", price: 90000 }
 ];
-console.log(shoppingSpree(wishlist)) // 227005
+console.log(shoppingSpree(wishlist)); // 227005
