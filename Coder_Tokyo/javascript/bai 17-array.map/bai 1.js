@@ -11,7 +11,5 @@ function tripple(num) {
 
 var numbers = [10, 5, 8];
 // Gợi ý: numbers.map... (tự viết tiếp)
-var numberAfter = numbers.map(function(x) {
-       return tripple(x);
-});
+var numberAfter = numbers.map( x => tripple(x));
 console.log(numberAfter);

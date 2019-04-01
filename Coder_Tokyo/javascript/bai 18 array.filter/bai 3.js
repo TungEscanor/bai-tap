@@ -1,10 +1,6 @@
 // Given a list of students, filter out the female ones
 function filterOutFemales(members) {
-    var theFamale = members.filter(function(value,i) {
-          //return members[i].gender !== 'female'
-          value = members[i].gender !== 'female' ;
-        return value;
-    })
+    var theFamale = members.filter(value => value.gender !== 'female' )
     return theFamale;
 }
 var members = [

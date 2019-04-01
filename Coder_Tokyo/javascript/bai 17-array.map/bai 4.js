@@ -3,11 +3,8 @@
     var me = [2, 5, 100];
     
     function doubleNumbers (arr) {
-        var done = arr.map(function(value) {
-            value = value * 2
-            return value     
-    })
-    return done
+        var done = arr.map(value => value * 2)
+            return done     
 }
      // [4, 10, 200]
     console.log(doubleNumbers (me));
