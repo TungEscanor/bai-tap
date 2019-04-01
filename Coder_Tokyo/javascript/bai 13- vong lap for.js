@@ -80,14 +80,14 @@ console.log('bài 6:sử dụng vòng lặp for...of viết hàm has để kiể
 
 
 function has(array, value) {
-    for ( i = 0; i<= 3; i++) {
+    for ( i = 0; i < array.length; i++) {
         if (array[i] === value){
             return true;
-        }
-        else {
+        };
+    }
+        if ( array[i] !== value){
             return false;
         }
     
-    }
-};
-console.log(has([1,2,3],9));
+}
+console.log(has([1,2,3],2));
