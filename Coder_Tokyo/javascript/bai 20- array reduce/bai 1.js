@@ -1,7 +1,6 @@
 // Turn an array of voter objects into a count of how many people voted
 function totalVotes(arr) {
-    var vote = arr.reduce((a, b ) => a + b.voted, 0 )
-return vote
+  return arr.reduce((a, b ) => a + b.voted, 0 )
 };
 var voters = [
   {name:'Bob' , age: 30, voted: true},

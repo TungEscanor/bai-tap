@@ -1,7 +1,7 @@
 // Make an array of strings of the names
 function namesOnly(item) {
-    var name = item.map(value => value.name);
-     return name
+  return item.map(value => value.name);
+     
 }
 
 console.log(namesOnly([

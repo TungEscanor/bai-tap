@@ -1,7 +1,6 @@
 // Given an array of arrays, flatten them into a single array
 function flatten(arr) {
-    var answer = arr.reduce((a, b) => a.concat(b), []);
-    return answer
+    return arr.reduce((a, b) => a.concat(b), []);
 }
 
 var arrays = [
