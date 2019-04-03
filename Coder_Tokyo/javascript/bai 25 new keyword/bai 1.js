@@ -13,7 +13,9 @@ var student = {
   age: 18,
 }
 function showInfo(){
-  console.log(student);
+  this.name = student.name;
+  this.gender = student.gender;
+  this.age = student.age;
 }
 
 showInfo(); // In ra tất cả thông tin của đối tượng
