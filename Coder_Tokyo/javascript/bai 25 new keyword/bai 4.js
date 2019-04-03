@@ -8,7 +8,9 @@
 */
 
 function Shape(color, shape, fill) {
-    // Your code here
+    this.color = color;
+    this.shape = shape;
+    this.fill = fill;
   }
   
   var shape1 = new Shape("red", "rectangle", true);

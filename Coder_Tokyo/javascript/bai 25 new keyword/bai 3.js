@@ -3,7 +3,7 @@
 */
 
 function lengthObj(obj) {
-    
+  console.log(Object.keys(obj).length);
 }
 
 var student = {

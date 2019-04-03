@@ -9,7 +9,12 @@ var student = {
     rollno : 12 
   };
 function updateObj() {
-    
+    function Student(name, sclass) {
+      this.name = name;
+      this.sclass = sclass;
+    }
+    var student1 = new Student(student.name, student.sclass)
+    console.log(student1);
 }
 updateObj(); 
 
