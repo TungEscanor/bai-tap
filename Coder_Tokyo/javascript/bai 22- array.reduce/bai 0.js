@@ -6,11 +6,9 @@ var products = [
     {name: 'E', quantity: 11, unitPrice: 10},
 ]
 
-var sum = products.reduce((a , b) => a + b.quantity * b.unitPrice, 0);
-console.log(sum);
+console.log(products.reduce((a , b) => a + b.quantity * b.unitPrice, 0));
 
 var items = [ 'Tom', 'Bill', 'Kim'];
 //Use reduce to make this result
 // '<Tom><Bill><Kim>'
-var itemsUp = items.reduce((a, b) => a  + '<' + b + '>', '');
-console.log(itemsUp);
+console.log(items.reduce((a, b) => a  + '<' + b + '>', ''));

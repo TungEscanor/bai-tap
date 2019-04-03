@@ -1,7 +1,6 @@
 // Sort the objects in the array by age
 function byAge(arr){
-    var answer = arr.sort((a, b) => a.age - b.age)
-    return answer
+    console.log(arr.sort((a, b) => a.age - b.age))
 }
 
 console.log(byAge([

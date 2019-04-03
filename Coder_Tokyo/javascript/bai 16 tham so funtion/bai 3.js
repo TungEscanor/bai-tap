@@ -17,6 +17,6 @@ function double(num) {
       return num * 2;
     }
     
-    var output = transform([2, 4, 6], double);
-    console.log(output);
+transform([2, 4, 6], double);
+
     // Expect: [4, 8, 12]

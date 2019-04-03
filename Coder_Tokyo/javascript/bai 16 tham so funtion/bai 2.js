@@ -14,7 +14,7 @@ function sumAndDo(nums, callback) {
   for ( var i of nums) {
       sum += i;
   }   
-   return callback(sum);
+   console.log( callback(sum));
 }
 
-console.log(sumAndDo([1, 2, 3], double));
+sumAndDo([1, 2, 3], double);

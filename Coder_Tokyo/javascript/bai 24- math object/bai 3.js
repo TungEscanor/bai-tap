@@ -5,7 +5,7 @@
 */
 
 function positiveNumber(arr) {
-  
+  var answer = arr.map(a => a*a)
+  console.log(answer.map(a => Math.sqrt(a)))
 }
-
 positiveNumber([-2, 3, -4, -7, 10]); // [ 2, 3, 4, 7, 10 ]

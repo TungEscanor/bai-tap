@@ -1,10 +1,9 @@
 // Make an array of strings of the names
 function namesOnly(item) {
-  return item.map(value => value.name);
-     
+  console.log(item.map(value => value.name));    
 }
 
-console.log(namesOnly([
+namesOnly([
   {
     name: "Angelina Jolie",
     age: 80
@@ -25,5 +24,5 @@ console.log(namesOnly([
     name: "Bob Ziroll",
     age: 100
   }
-]))
+])
 // ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]

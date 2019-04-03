@@ -1,6 +1,6 @@
 // Given an array of all your wishlist items, figure out how much it would cost to just buy everything at once
 function shoppingSpree(arr) { 
-  return wishlist.reduce((a, b) => a + b.price, 0)
+  console.log(wishlist.reduce((a, b) => a + b.price, 0))
 }
 var wishlist = [
   { title: "Tesla Model S", price: 90000 },
@@ -9,4 +9,4 @@ var wishlist = [
   { title: "Gold fidgit spinner", price: 2000 },
   { title: "A second Tesla Model S", price: 90000 }
 ];
-console.log(shoppingSpree(wishlist)); // 227005
+shoppingSpree(wishlist); // 227005

@@ -14,11 +14,9 @@ var students = [
    * Gợi ý: sử dụng sort và slice
    */
   function getTopStudents(students) {
-      var answer = students.sort((a, b) => b.score - a.score);
-      return answer.slice(0,3)
+      console.log((students.sort((a, b) => b.score - a.score).slice(0,3)));
   }
-  
   /**
    * Chạy thử hàm
    */
- console.log(getTopStudents(students));
+ getTopStudents(students);

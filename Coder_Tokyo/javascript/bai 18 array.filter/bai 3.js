@@ -1,6 +1,6 @@
 // Given a list of students, filter out the female ones
 function filterOutFemales(members) {
-    return members.filter(value => value.gender !== 'female' )
+    console.log(members.filter(value => value.gender !== 'female' ))
    
 }
 var members = [
@@ -10,4 +10,4 @@ var members = [
 { name: 'Peter', gender: 'gay' }
 ];
 
-console.log(filterOutFemales(members));
+filterOutFemales(members);

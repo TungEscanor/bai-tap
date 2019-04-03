@@ -74,26 +74,29 @@ var apartment = {
 //    * price
 //    * Chú ý: không cần hiển thị ra đúng thứ tự như trên
 //    */
-  var apartment = {
-    bedroom: {
-      area: 20,
-      bed: {
-        type: 'twin-bed',
-        price: 100
+  
+  //var key1 = Object.keys(apartment);
+  // var key2 = Object.keys(apartment.bedroom);
+  // var key3 = Object.keys(apartment.bedroom.bed);
+  // var key23 = key2.concat(key3);
+  // var keys = key1.concat(key23);
+  
+  // let result = '';
+  // for( var item of keys ){
+  //   result += item +'\n';
+  // }
+  // console.log(result);
+
+  function printKey(obj) {
+    for (var item in obj) {
+      console.log(item);
+      if (typeof obj[item] === "object") {
+        printKey(obj[item]);
       }
     }
-  };
-  var key1 = Object.keys(apartment);
-  var key2 = Object.keys(apartment.bedroom);
-  var key3 = Object.keys(apartment.bedroom.bed);
-  var key23 = key2.concat(key3);
-  var keys = key1.concat(key23);
-  
-  let result = '';
-  for( var item of keys ){
-    result += item +'\n';
   }
-  console.log(result);
+  
+  printKey(apartment);
 
 //Bài 4:
 function sum(numbers) {
@@ -110,11 +113,11 @@ return j
 // //  - nếu array trống trả về 0
 
 function has(object, key) {
-    for (var i in object) {
+  for (var i in object) {
     if ( i === key) {
       return true
     }
-  }
+  };
     if (i !== key) {
       return false
     }
@@ -124,7 +127,7 @@ var me = {
   age : 23,
   gender: 'male'
 };
-console.log(has(me, 'gender'));
+console.log(has(me, 'name'));
 
 
     

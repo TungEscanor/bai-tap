@@ -2,6 +2,6 @@
  * Sử dụng sort method để sắp xếp lại 1 array các số sau theo thứ tự giảm dần (descending order)
  */
 function sortNumbers(arr) {
-    return arr.sort((a, b) => b - a);
+    console.log(arr.sort((a, b) => b - a));
 }
-console.log(sortNumbers([5, 1, 3, 2])); // [5, 3, 2, 1]
+sortNumbers([5, 1, 3, 2]); // [5, 3, 2, 1]

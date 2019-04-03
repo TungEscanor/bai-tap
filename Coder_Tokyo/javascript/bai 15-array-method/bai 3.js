@@ -5,7 +5,7 @@
 */
 
 function first(arr, n) {
-return arr.slice(0, n)
+console.log(arr.slice(0, n))
 }
 
-console.log(first([1, 2, 3], 2)); // expect [1, 2]
+first([1, 2, 3], 2); // expect [1, 2]

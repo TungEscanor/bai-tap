@@ -5,7 +5,7 @@
 
 function average(arr) {
   var sum = arr.reduce((a, b) => a + b);
-  return Math.round(sum / 3)
+  console.log(Math.round(sum / 3))
 }
 
-console.log(average([8, 8 , 6.75])) // 8
+average([8, 8 , 6.75])// 8

@@ -3,7 +3,8 @@
 */
 
 function powerup(arr) {
-    var number = arr.filter((a => a %2 === 0),[]);
-    return number.map(a => a * a)
+    var number1 = arr.filter((a => a %2 === 0),[]);
+    var number2 = arr.filter((a => a %2 !== 0),[]);
+    console.log(number1.map(a => a * a).concat(number2))
 }
-console.log(powerup([0, 3, 6, 7, 4])); // [0, 3, 36, 7, 16] 
+powerup([0, 3, 6, 7, 4]); // [0, 3, 36, 7, 16] 

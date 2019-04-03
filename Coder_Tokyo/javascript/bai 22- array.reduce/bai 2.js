@@ -1,6 +1,6 @@
 // Count the occurrences of each element inside an array using reduce
 function countOccurrences(arr) {
-  return arr.reduce(function (a, b) { 
+  console.log( arr.reduce(function (a, b) { 
         if (b in a) {
           a[b]++;
         }
@@ -8,11 +8,11 @@ function countOccurrences(arr) {
           a[b] = 1;
         }
         return a;
-}, {})
+}, {}))
 };
 
 
-console.log(countOccurrences(['a', 'b', 'c', 'b', 'a']));
+countOccurrences(['a', 'b', 'c', 'b', 'a']);
 // { 
 //   a: 2, 
 //   b: 2, 
