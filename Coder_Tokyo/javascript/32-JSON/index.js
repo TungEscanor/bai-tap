@@ -36,7 +36,7 @@ if (or == 2) {
    console.log(options);
 }
 if (or == 1) {
-    break;
+   break;
 }
 }
 
