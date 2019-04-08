@@ -10,12 +10,13 @@
 var readlineSync = require('readline-sync');
 var fs = require('fs');
 var content = fs.readFileSync('data.json',{encoding:'utf8'});
-var data = {};
-data.students = [];
+var show = JSON.parse(content)
+var data = show;
+//data.students = [];
 while(true) {
 var options = readlineSync.question('what is your option? 1.Show data 2.Add data 3.Save and exit');
 if (options == 1){
-    console.log(content);
+    console.log(show);
     console.log(options);
 };
 if (options == 2){
