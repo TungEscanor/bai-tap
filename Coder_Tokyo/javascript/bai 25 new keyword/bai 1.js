@@ -13,9 +13,8 @@ var student = {
   age: 18,
 }
 function showInfo(){
-  this.name = student.name;
-  this.gender = student.gender;
-  this.age = student.age;
+    for(let k in student){
+    console.log(k + ":" + student[k]);
+    }
 }
-
 showInfo(); // In ra tất cả thông tin của đối tượng
