@@ -11,7 +11,8 @@ var readlineSync = require('readline-sync');
 var fs = require('fs');
 var content = fs.readFileSync('data.json',{encoding:'utf8'});
 var show = JSON.parse(content)
-var data = show;
+var data = [];
+data = show;
 //data.students = [];
 while(true) {
 var options = readlineSync.question('what is your option? 1.Show data 2.Add data 3.Save and exit');
