@@ -8,4 +8,4 @@ var done = function() {
 console.log('Start');
 var timeoutId = setTimeout(done, 2000);
 console.log('Done');
-clearTimeout(timeoutId);
+//clearTimeout(timeoutId);
