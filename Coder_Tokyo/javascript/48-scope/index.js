@@ -12,8 +12,9 @@ function ramdom () {
 
 function doSomething () {
     a = 5
+    console.log(a);
 }
-//console.log(b);
+console.log(b);
 doSomething();
 ramdom();
 console.log(a);
