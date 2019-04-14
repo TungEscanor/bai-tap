@@ -1,12 +1,14 @@
 // Date
 // moment.js
 var moment = require('moment')
-// var now = new Date();
-// var myBirthday = new Date(1995, 11, 20); //20-12-1990
+var now = new Date();
+var myBirthday = new Date(1995, 11, 20); //20-12-1995
 
-// // number of milliseconds from 1-1-1970 +7 +9
-// console.log(now.getTime());
-// console.log(myBirthday.getTime());
+// number of milliseconds from 1-1-1970 +7 +9
+console.log(now.getTime());
+console.log(now.getDay());
+console.log(myBirthday.getTime());
+console.log(myBirthday.getDay());
 
-var now = moment('2019-04-12 22:04');
+var now = moment();
 console.log(now.format('DD/MM/YYYY'));
