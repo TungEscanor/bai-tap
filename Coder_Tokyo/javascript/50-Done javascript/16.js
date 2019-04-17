@@ -1,6 +1,10 @@
 function middleArray(arr1,arr2){
-}
-
+    var answer = []
+    answer.push(arr1[1], arr2[1]);
+    return answer
+} 
+var test = middleArray([1,9,2],[4,0,6])
+console.log(test);
 
 
 

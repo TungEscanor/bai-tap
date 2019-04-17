@@ -9,4 +9,16 @@ Output: [1,2]*/
 
 function findMostFrequent(arr) {
     // Viêt hàm tại đây!
+    var answer = [];
+    var sort = arr.sort((a, b) => a -b);
+    var count = 1;
+    for( i = 0; i < arr.length; i ++) {
+        if (sort[i] === sort[i + 1]) {
+            count ++
+        } else { count = count, answer.push(sort[i])}
     }
+    
+    }
+
+    var test = findMostFrequent([6,6,6,2,2])
+    console.log(test);
