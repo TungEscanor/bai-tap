@@ -5,7 +5,7 @@
  */
 
 var path = require('path');
-function Path(){
-   console.log( path.extname('./index.html'))
+function Path(filename){
+   console.log( path.extname(filename))
 } 
-Path();
+Path('./index.html');
