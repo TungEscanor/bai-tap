@@ -121,6 +121,7 @@ Banner
     font-size: 25px;
 }
 .intro-first-content p {
+    opacity: 0.6;
     text-align: justify;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
@@ -159,7 +160,25 @@ Banner
 .help .help-2 {
     box-shadow: 10px 10px 10px 5px #e4e4e4;
 }
-
+.help p {
+    opacity: 0.6;
+}
+/*map
+*/
+.main-content .describe-map h1 {
+    text-align: center;
+    font-size: 45px;
+    padding: 66px;
+}
+.main-content .describe-map p {
+    text-align: center;
+    display: flex;
+  justify-content: center;
+    width: 875px;
+    margin: 0 auto;
+    font-size: 15px;
+    opacity: 0.6;
+}
 /*
 Footer CSS
 */
