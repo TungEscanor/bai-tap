@@ -38,7 +38,7 @@
 
     render(users);
 
-    searchInput.addEventListener('keyup', function(event) {
+    searchInput.addEventListener('onkeyup', function(event) {
     // sự kiện 'change' chỉ xảy ra khi input bị mất focus
     // sử dụng sự kiện keyup để tìm kiếm người dùng có số điện thoại khớp với nội dung tìm kiếm.
     // Gợi ý: 
@@ -47,7 +47,20 @@
     // Sử dụng Chrome Developer Tools để xem giá trị hiển thị ra sau mỗi lần gõ
     var value = searchInput.value;
     console.log(value);
-    });
+    var i;
+    var nullData = "No data";
+    var result = '<li>' + user[i].name + ' - ' + user[i].phone + '</li>';
+        for (i = 0; i < users.length; i ++) {
+            if (value == user[i].name.filter(text => text == value) 
+            || value == user[i].phone.filter(text => text == value) 
+            || value.indexOf(parseInt(users[i].phone) > -1) 
+            || value.toString().indexOf(user[i].name.toLoweCase()) > -1) {
+                return result; userList.innerHTML=result.join('');
+            } else return nullData; userList.innerHTML = nullData
+        }
+    }
+
+    );
     </script>
 </body>
 </html>
