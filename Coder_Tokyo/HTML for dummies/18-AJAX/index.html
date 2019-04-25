@@ -14,18 +14,13 @@
         <li>Have a walk</li>
         <li>Go to bed</li> -->
     </ul>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script type="text/javascript">
-    var storegeKey = 'todoList';
-    var dataString = localStorage.getItem(storegeKey);
-    
-    var todoList;
-
-    if (dataString) {
-        todoList = JSON.parse(dataString);
-    } else {
-        todoList = [];
-    }   
-
+    var url = "http://localhost:9081/todos"
+    axios.get(url).then(function(res) {
+        var items = res.data;
+        render(items)
+    })
     function addItem() {
         //get vales of the input
         var input = document.getElementById("new-item");
@@ -38,13 +33,13 @@
         // store data
         localStorage.setItem(storegeKey, JSON.stringify(todoList));
     }
-    function render() {
+    function render(items) {
         var htmlList = document.getElementById('todo-list');
-        var content = todoList.map(item => '<li>' + item + '</li>');
+        var content = items.map(item => '<li>' + item.content + '</li>');
         htmlList.innerHTML = content.join('');
     }
 
-    render();
+    //render();
 
         
     </script>
