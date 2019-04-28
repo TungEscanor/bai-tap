@@ -22,3 +22,14 @@ Output: [1,2]*/
 
 //     var test = findMostFrequent([6,6,6,2,2])
 //     console.log(test);
+
+// const abc = arr =>{
+//     return arr.reduce((obj, item)=>{
+//       return obj[item] ? {...obj, [item]: ++obj[item]} : {...obj,[item]:1}
+//     },{})
+//   }
+//   const obj =abc([1,2,3,2,1,1,1])
+//   let max= Math.max(...Object.values(obj))
+//    Object.keys(obj).filter(item => obj[item] == max).reduce((obj2, item)=>{
+//     return {...obj2, [item]: obj[item] }
+//   }, {})
