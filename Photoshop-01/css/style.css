@@ -15,12 +15,7 @@ Header css
     padding: 50px 0;
     max-height: 170px;
 }
-.header .logo {
 
-}
-.header nav.main-menu {
-
-}
 .header nav.main-menu ul {
     list-style: none;
     margin: 0px;
@@ -62,20 +57,17 @@ Banner
 }
 /*Intro 1
 */
-.intro-first {
-    height: 770px;
-}
-.intro-first .row {
-    width: 100%;
-}
+
 .intro-first .intro-first-image {
     padding: 0px 5px 15px 0px;
+    height: 770px;
     position: relative;
 }
+
 .intro-first .intro-first-image .img-intro-1 {
     position: absolute;
     top: 149px;
-    left: 100px;
+    left: 30px;
     width: 535px;
     height: 361px;
     box-shadow: 10px 10px 15px #e4e4e4;
@@ -83,25 +75,15 @@ Banner
 .intro-first .intro-first-image .img-intro-2 {
     position: absolute;
     top: 448px;
-    left: 348px;
+    left: 280px;
     width: 314px;
     height: 228px;
     box-shadow: 10px 10px 15px #e4e4e4;
     outline: 5px solid white;
 }
-.intro-first .intro-first-image .background-intro {
-    display: block;
-    position: absolute;
-    transform: rotate(70deg);
-    width: 300px;
-    height: 500px;
-    background-color: #f3f3f3;
-    top: -150px;
-    left: -50px;
-    z-index: -1;
-}
+
 .intro-first-content {
-    padding : 200px 200px 0px 25px;
+    padding : 140px 50px 0px 50px;
 }
 .intro-first-content h1 {
     font-size: 45px;
@@ -124,6 +106,7 @@ Banner
     opacity: 0.6;
     text-align: justify;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
 }
 .intro-first-content .read-more a {
     display: inline-block;
@@ -141,6 +124,8 @@ Banner
 .help .container {
     padding : 15px 50px 50px 100px;
     vertical-align: middle;
+    display: flex;
+    justify-content: center;
 }
 .help .help-option {
     display: inline-block;
@@ -210,6 +195,7 @@ Banner
 }
 .main-content .subscribe .content-form .send-email{
     height: 40px;
+    width: 650px;
 }
 .main-content .subscribe .content-form .send-email input {
     width: 480px;
@@ -218,7 +204,8 @@ Banner
     padding: 20px;
     margin-left: 10px;
     background-color: #f3f2f2;
-    border: none
+    border: none;
+    display: inline-block;
 }
 .main-content .subscribe .content-form .send-email input[type="submit"] {
     width: 150px;
